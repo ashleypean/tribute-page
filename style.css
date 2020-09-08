@@ -1,127 +1,5 @@
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 5rem 10rem;
-  padding: 0;
-  background-image: linear-gradient(to right, rgba(53, 55, 56, 0.932), rgba(22, 22, 22, 0.795), rgb(0, 0, 0));
-  border: 1px solid transparent;
-  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 2/5;
-  border-image-outset: 4px;
-}
-
-h1 {
-  color: peachpuff;
-  font-family: 'Major Mono Display', monospace;
-  font-size: 2.5rem;
-  height: 50%;
-}
-
-h3, p {
-  color: whitesmoke;
-  font-family: 'Inconsolata', monospace;
-}
-
-
-.page1 {
-  width: 100%;
-  height: 80vh;
-  border-radius: 4px;
-  height: 50rem;
-  display: flex;
-  flex-direction: row;
-}
-
-.page1 img {
-  display: block;
-  margin: 0;
-  padding: 0;
-  height: 35rem;
-  position: relative;
-  left: 0;
-  justify-self: end;
-}
-
-.button1 {
-  height: 20vh;
-}
-
-.button {
-  visibility: hidden;;
-}
-
-button {
-  position: relative;
-  animation-name: bounce;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  border-radius: 50%;
-  display: block;
-  margin: auto;
-}
-
-@keyframes bounce {
-  0% {
-    top: -25px;
-  }
-  50% {
-    top: 25px;
-  }
-  100% {
-    top: -25px;
-  }
-}
-
-.card {
-  display: flex;
-  flex-direction: row;
-  justify-items: flex-start;
-  height: 40vh;
-  padding: 0 3rem;
-  align-items: stretch;
-  background: rgba(255,218,185, 0.4);
-  border-radius: 4px;
-  margin: 0 2rem 5rem;
-}
-
-.photo {
-  width: 20rem;
-  align-self: center;
-  margin-right: 1rem;
-}
-
-div.text {
-  width: 100%;
-  font-size: 1rem;
-}
-
-#back-to-top {
-  text-align: center;
-}
-
-a {
-  color: wheat;
-  text-decoration: none;
-}
-
-a:visited {
-  color: wheat;
-}
-
-footer {
-  text-align: center;
-}
-
-i {
-  font-size: 1.5rem;
-  color: wheat;
-  margin-right: 1rem;
-}
-
 /*Large tablets (iPad Pro)*/
-@media screen and (min-width: 1020px) {
+@media screen and (max-width: 1020px) {
   body {  
     margin: 5% 5%;
   }
@@ -194,7 +72,7 @@ i {
 
 
 /*Smaller tablets (iPad)*/ 
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
   header {
     height: 100vh;
   }
@@ -267,7 +145,7 @@ i {
 } 
 
 /*Medium sized phones (iPhone X)*/
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 300px) {
   
   header {
     max-height: 200rem;
@@ -347,4 +225,135 @@ i {
     margin: 3rem;
     text-align: center;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 5rem 10rem;
+  padding: 0;
+  background-image: linear-gradient(to right, rgba(53, 55, 56, 0.932), rgba(22, 22, 22, 0.795), rgb(0, 0, 0));
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 2/5;
+  border-image-outset: 4px;
+}
+
+h1 {
+  color: peachpuff;
+  font-family: 'Major Mono Display', monospace;
+  font-size: 2.5rem;
+  height: 50%;
+}
+
+h3, p {
+  color: whitesmoke;
+  font-family: 'Inconsolata', monospace;
+}
+
+
+.page1 {
+  width: 100%;
+  height: 80vh;
+  border-radius: 4px;
+  height: 50rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.page1 img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 35rem;
+  position: relative;
+  left: 0;
+  justify-self: end;
+}
+
+.button1 {
+  height: 20vh;
+}
+
+.button {
+  visibility: hidden;;
+}
+
+.button3 {
+  visibility: visible;
+}
+
+.button5 {
+  visibility: visible;
+}
+
+button {
+  position: relative;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+@keyframes bounce {
+  0% {
+    top: 30px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  height: 38vh;
+  padding: 0 3rem;
+  align-items: stretch;
+  background: rgba(255,218,185, 0.4);
+  border-radius: 4px;
+  margin: 0 2rem 2rem;
+}
+
+.photo {
+  width: 20rem;
+  align-self: center;
+  margin-right: 1rem;
+}
+
+div.text {
+  width: 100%;
+  font-size: 1rem;
+}
+
+#back-to-top {
+  text-align: center;
+}
+
+a {
+  color: wheat;
+  text-decoration: none;
+}
+
+a:visited {
+  color: wheat;
+}
+
+footer {
+  text-align: center;
+}
+
+i {
+  font-size: 1.5rem;
+  color: wheat;
+  margin-right: 1rem;
 }
